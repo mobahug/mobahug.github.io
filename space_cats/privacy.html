@@ -70,25 +70,34 @@ ONLINE, and nothing is sent to our server until you do.</p>
   key that stays in the game's save on your device; our server keeps only a scrambled fingerprint of the key.</li>
   <li><strong>What our server keeps.</strong> For the account: your #tag, the title and avatar frame you chose in
   the game, the fighter and skin you last searched with, your ranked points, a hidden skill rating, your wins,
-  losses and streak, your best result this season and an unclaimed season reward. For each ranked fight: which
-  accounts fought, who won, how the points changed, how it ended and when.</li>
-  <li><strong>During a fight against another player.</strong> Your button presses, your fighter, colours, skin,
-  title, avatar frame and aura, and the game version pass through our server to the other player's device, which
-  computes the same fight. They are not stored.</li>
+  losses and streak, this season's wins, losses, best streak and best result, the season's rank road rewards already
+  paid and your promotion shield, the ranked titles and frames you earned, your ranked wins and fights with each
+  fighter (and the points won with each this season), your final and best points in past seasons, and an unclaimed
+  season reward. For each ranked fight: which accounts fought with which fighters, who won, how the points changed,
+  how it ended and when.</li>
+  <li><strong>During a fight against another player.</strong> Your fighter, colours, skin, title, avatar frame and
+  aura, and the game version pass through our server to the other player's device, which computes the same fight.
+  Your button presses go straight to the other player's device where your two networks allow it (a direct, encrypted
+  connection between the two devices), and otherwise through our server too. None of it is stored.</li>
   <li><strong>Who sees it.</strong> Other players see your title, #tag, avatar frame, fighter and skin, your league and
-  points, in matches and on the ladder. When nobody near a player's level is online, your fighter, skin, title and
+  points, your win streak, your mastery of the fighter you play and your places on the ladder and on that fighter's
+  ladder, in matches and on the ladders. When nobody near a player's level is online, your fighter, skin, title and
   league may be used for an AI ghost that the computer plays against them, and theirs for yours; the game always
   says when an opponent is an AI ghost.</li>
   <li><strong>Your network address.</strong> Like any server, ours sees your device's internet address while you
   play online. We use it only to limit how many new accounts one address can make in an hour, keep it in memory for
-  at most that hour and never store it. Cloudflare keeps its own request logs as described in its
-  <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>.</li>
+  at most that hour and never store it. For the direct connection, the two devices in a fight against another
+  player tell each other their network addresses (internet and local network) through our server, so the other
+  player's device learns yours, as in any game that connects players directly; the game neither shows nor keeps it.
+  Cloudflare's STUN service, which tells your device its internet address for this, sees it too. Cloudflare keeps
+  its own request logs as described in its <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>.</li>
   <li><strong>Why.</strong> Only to run online play: matching you with players near your level, settling fights
   fairly, keeping the ladder and the seasons. Nothing is sold or shared with anyone else, and nothing is used for
   advertising.</li>
   <li><strong>How long.</strong> As long as the account exists. Accounts not used for a year are deleted, and fights
   older than a year too. Deleting your account (below) removes it at once.</li>
-  <li><strong>Security.</strong> Everything between the game and our server is encrypted (HTTPS).</li>
+  <li><strong>Security.</strong> Everything between the game and our server is encrypted (HTTPS), and so is the
+  direct connection between two devices (DTLS, as in every WebRTC connection).</li>
 </ul>
 
 <h2>Wi-Fi battles</h2>
