@@ -40,8 +40,8 @@ To delete your data, see <a href="#delete">Deleting your data</a>.</p>
 <p>The only thing that comes to us is what ONLINE play needs, and only if you open ONLINE: an online account with
 no sign-in, its ranked fights and your best scores (see <a href="#online">Online play</a>), and, if you are signed in to Google Play Games,
 the link between your Play Games account and your one Gausaa Games account (see
-<a href="#gausaa">Your Gausaa Games account</a>); and a copy of your progress, only if you turn the cloud save on (see
-<a href="#cloud">Cloud save</a>). The rest of what can leave your device is described below: your
+<a href="#gausaa">Your Gausaa Games account</a>); and, while you are signed in to Google Play Games and have not
+turned it off, a copy of your progress (see <a href="#cloud">Cloud save</a>). The rest of what can leave your device is described below: your
 achievements and scores, only if you use Google Play Games, what Google's ad software collects for the rewarded
 videos, and what a Wi-Fi battle sends to the other player's device.</p>
 
@@ -126,7 +126,8 @@ ONLINE, and nothing is sent to our server until you do.</p>
 <p>Gausaa Games makes more than one game. Through Google Play Games you get one account for all of them, so your
 online account comes back on a new phone, and our other games can recognise you as they get online play.</p>
 <ul>
-  <li><strong>When.</strong> Only if you are signed in to Google Play Games when you open ONLINE. The game then asks
+  <li><strong>When.</strong> Only if you are signed in to Google Play Games: when you open ONLINE, and when the cloud
+  save first runs (see <a href="#cloud">Cloud save</a>). The game then asks
   Google Play Games for a one-time code and sends it to our Gausaa ID service, which gets from Google two ids of your
   Play Games account - your player id in Space Cats, and a key that is the same in every game Gausaa Games publishes
   on Google Play - and the name on your Play Games profile, which it passes on to our server (it does not keep it) so
@@ -150,13 +151,15 @@ online account comes back on a new phone, and our other games can recognise you 
 </ul>
 
 <h2 id="cloud">Cloud save (optional)</h2>
-<p>If you are signed in to Google Play Games, the game asks once whether to keep your progress safe on our server; you
-can also turn CLOUD SAVE on, and off again, in Settings &gt; Game. It is off until you say yes, and nothing is sent
-before that. With it on:</p>
+<p>If you are signed in to Google Play Games, the game keeps a copy of your progress on our server by itself, so it is
+there on a new phone or after a reinstall. You can turn CLOUD SAVE off, and on again, in Settings &gt; Game; turned
+off, nothing more is sent. If you are not signed in to Play Games, nothing is sent at all. With it on:</p>
 <ul>
   <li><strong>What our server keeps.</strong> Your Gausaa Games account's random id; your progress as the game saves
   it (your coins, what you unlocked and wear - fighters, skins, frames, banners, titles, music - your records, missions
-  and daily and weekly progress; not your settings, and not your online account's key); the same coins and unlocked
+  and daily and weekly progress; your game settings such as sound volumes, the touch controls you chose and where you
+  put their buttons, and the fights' rules; not the settings that belong to the phone, and not your online account's
+  key); the same coins and unlocked
   items as a list; your progress as it was at the start of each of the last 14 days; a scrambled fingerprint of a key
   for each phone you use it on; and, if you ever buy an item for real money, a record of that purchase: which item,
   when, and a scrambled fingerprint (SHA-256) of Google Play's purchase token. No name, e-mail address, device
@@ -208,8 +211,9 @@ colours, skin). None of it is stored by the game or sent anywhere else.</p>
 
 <h2>What stays on your device</h2>
 <p>The game saves your settings and progress (coins, unlocked items, records and missions) in files on your device.
-These files never leave the device through the game, unless you turn the cloud save on (see
-<a href="#cloud">Cloud save</a>: then a copy of your progress, never your settings, is kept on our server); only the
+These files never leave the device through the game, except through the cloud save while you are signed in to Google
+Play Games (see <a href="#cloud">Cloud save</a>: a copy of your progress and of your game settings is kept on our
+server until you turn it off or delete it); only the
 achievements and scores described under Google Play Games are sent to Google, while you are signed in. If Android backup is turned on for your device, Android may
 include them in your own Google backup so your progress can come back on a new phone; that backup belongs to your
 Google account and we cannot see it. Uninstalling the game deletes these files.</p>
@@ -231,8 +235,7 @@ is online, before a video is loaded) and a <strong>foreground service</strong> f
 asks you anything.</p>
 
 <h2 id="delete">Deleting your data</h2>
-<p>Space Cats by Gausaa Games keeps data about you on a server only for online play and, if you turn it on, for the
-cloud save. You can delete all of it yourself, at any time, like this.</p>
+<p>Space Cats by Gausaa Games keeps data about you on a server only for online play and for the cloud save. You can delete all of it yourself, at any time, like this.</p>
 <ul>
   <li id="delete-online"><strong>Your online account</strong> (your #tag, ranked points, league, best scores and fight history on
   our server): in the game, open ONLINE &gt; ACCOUNT &gt; DELETE ONLINE ACCOUNT and confirm. The account and its
@@ -248,10 +251,11 @@ cloud save. You can delete all of it yourself, at any time, like this.</p>
   <a href="mailto:gausaa.games@gmail.com">gausaa.games@gmail.com</a> with your online name and #tag as the game
   shows them (on ONLINE &gt; ACCOUNT) and we delete it within 30 days. The steps for all our games are also at
   <a href="https://mobahug.github.io/gausaa/delete.html">mobahug.github.io/gausaa/delete.html</a>.</li>
-  <li id="delete-cloud"><strong>Your cloud save</strong> (the copy of your progress on our server, if you turned it
-  on): in the game, open Settings &gt; Game &gt; CLOUD SAVE &gt; DELETE CLOUD SAVE and confirm. It is deleted from our
+  <li id="delete-cloud"><strong>Your cloud save</strong> (the copy of your progress on our server, kept while you
+  are signed in to Play Games): in the game, open Settings &gt; Game &gt; CLOUD SAVE &gt; DELETE CLOUD SAVE and confirm. It is deleted from our
   server at once, with its daily copies and purchase fingerprints; your progress on the device stays, and the cloud
-  save is off. Deleting your online account (when it is linked to your Gausaa Games account) or your Gausaa Games
+  save is off on that phone (a game installed anew starts with it on again: turn it off there too if you want
+  none). Deleting your online account (when it is linked to your Gausaa Games account) or your Gausaa Games
   account deletes it too. Another phone that still had the cloud save on does not bring it back: it turns its own
   off. If you can no longer open the game on that phone: install it again, sign in to the same Play Games account
   and delete it there; or, if you have an online account linked to the same Gausaa Games account, e-mail
